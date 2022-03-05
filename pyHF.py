@@ -11,7 +11,7 @@ import requests
 
 
 __version__ = 'v1.7.7'
-__author__ = 'Sergio Sánchez Pinel'
+__author__ = 'Sergio Sánchez'
 __package__ = 'SCF Script'
 
 ang_to_bohr = 1.8897259885789
