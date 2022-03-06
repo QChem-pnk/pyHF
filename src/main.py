@@ -1,6 +1,6 @@
 import sys
 import time
-
+import os
 from src.utils import parser_file,_timestamp,get_random_quote,invsqrt_matrix
 from src.read_utils import read_input
 from src.one_electron import oeint_calc
@@ -13,6 +13,8 @@ def main():
     """
     Main function to perform Hartree-Fock
     """
+    if not os.path.exists('out'):
+        os.makedirs('out')
     f = None
     arg = parser_file()
     timestart = time.time()  # Store time of start
