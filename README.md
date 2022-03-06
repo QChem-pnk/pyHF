@@ -19,4 +19,6 @@ one. Example:
 
 `python hf.py INPUT -vfp`
 
-Example input files can be found in the inp folder.
+Example input files can be found in the inp folder. Example for `h2_sample.input`:
+
+`python hf.py "inp\h2_sample.input" -o "out\h2_sample.out" -fv`
