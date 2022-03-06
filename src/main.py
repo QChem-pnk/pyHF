@@ -13,13 +13,14 @@ def main():
     """
     Main function to perform Hartree-Fock
     """
-    if not os.path.exists('out'):
-        os.makedirs('out')
     f = None
     arg = parser_file()
     timestart = time.time()  # Store time of start
     output = arg.output
     original = sys.stdout
+    path = os.path.abspath(output)
+    if not os.path.exists(path):
+        os.makedirs(path)
     if not arg.printonly:  # Check if only printing is set
         if output is None:  # If not output defined, use name of input
             output = arg.input + '.out'
