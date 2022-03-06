@@ -18,7 +18,7 @@ def main():
     timestart = time.time()  # Store time of start
     output = arg.output
     original = sys.stdout
-    path = os.path.abspath(output)
+    path = os.path.dirname(output)
     if not os.path.exists(path):
         os.makedirs(path)
     if not arg.printonly:  # Check if only printing is set
